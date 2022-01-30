@@ -3,10 +3,10 @@ const validator = require('validator') //NPM package to validate string input fr
 const chalk = require('chalk') //to color the console output
 const yargs = require('yargs')
 const { demandOption, argv } = require('yargs')
-// fs.writeFileSync('notes.txt', 'Today I started my NodeJS tutorial on Udemy')
-// fs.appendFileSync('notes.txt', '\nthis is appended text with appendFileSync function')
-// console.log(utils)
-// console.log(myNotes())
+    // fs.writeFileSync('notes.txt', 'Today I started my NodeJS tutorial on Udemy')
+    // fs.appendFileSync('notes.txt', '\nthis is appended text with appendFileSync function')
+    // console.log(utils)
+    // console.log(myNotes())
 yargs.version('1.0.0')
 
 //ADD===========================
@@ -61,10 +61,10 @@ yargs.command({
 
 //READ==========================
 yargs.command({
-    command: 'read',
+    command: 'show',
     describe: 'To read an existing note',
-    builder:{
-        title:{
+    builder: {
+        title: {
             describe: 'Title of note to read',
             demandOption: true,
             type: 'string'
@@ -76,13 +76,3 @@ yargs.command({
 })
 
 yargs.parse()
-
-
-
-
-// console.log(yargs.argv)
-// console.log(process.argv)
-// console.log(validator.isEmail('alok@gmail.co.in'))
-// console.log(validator.isURL('http://google.com'))
-// console.log(chalk.bold.green('Success!'))
-// console.log(myNotes())
